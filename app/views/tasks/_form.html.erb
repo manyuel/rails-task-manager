@@ -1,0 +1,11 @@
+<div class="mb-3">
+  <label for="title" class="form-label">
+    <%= form_with model: @task do |t| %>
+      <%= t.label :title %>
+      <%= t.text_field :title %>
+      <%= t.label :details %>
+      <%= t.text_field :details %>
+      <%= t.submit %>
+    <% end %>
+  </label>
+</div>
